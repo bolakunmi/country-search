@@ -10,9 +10,6 @@ const COUNTRY = () => {
     return country.numericCode.toString() === numericCode.toString();
   });
 
-
-  console.log(selected.borders);
-
   return (
     <div
       className={dark ? " night_header selected" : " light_header selected"}
@@ -63,7 +60,7 @@ const COUNTRY = () => {
         </div>
 
         <span className="border_countries"><h4>Border Countries:  </h4><span className="border_container">   
-           {selected.borders.map((bor)=> <span className="border">{bor}</span>)} 
+           {selected.borders.map(bor=> <span className="border">{bor}</span>)} 
         </span></span>
         
 
